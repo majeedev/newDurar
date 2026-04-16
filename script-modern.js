@@ -105,16 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.disabled = true;
 
         const productLink = document.getElementById('product-link').value;
-        const details = document.getElementById('product-details').value;
-        const qty = document.getElementById('quantity').value;
         const name = document.getElementById('customer-name').value;
         const phone = document.getElementById('phone').value;
         const address = document.getElementById('address').value;
 
         const message = `*طلب جديد من شي إن دُرَر*%0A%0A` +
-                        `*رابط المنتج:* ${productLink}%0A` +
-                        `*التفاصيل:* ${details}%0A` +
-                        `*الكمية:* ${qty}%0A%0A` +
+                        `*رابط السلة / المنتج:* ${productLink}%0A%0A` +
                         `*اسم العميل:* ${name}%0A` +
                         `*رقم الهاتف:* ${phone}%0A` +
                         `*العنوان:* ${address}%0A%0A` +

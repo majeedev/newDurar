@@ -2,7 +2,7 @@
 
 :root {
     --primary: #8f633c;
-    --primary-dark: #714d07;
+    --primary-dark: #755030;
     --accent: #d18d0f;
     --bg: #fdf8ef;
     --card-bg: #faefe7;
@@ -588,29 +588,69 @@ header.sticky {
 
 /* Offer Banner */
 .offers {
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .offer-banner {
-    padding: 3rem;
-    border-radius: 30px;
+    padding: 4rem 2rem;
+    border-radius: 40px;
     text-align: center;
-    background: linear-gradient(135deg, var(--card-bg) 0%, #fff 10%, var(--card-bg) 100%);
-    border: 2px dashed var(--accent);
+    background: linear-gradient(135deg, var(--white) 0%, var(--card-bg) 50%, var(--white) 100%);
+    border: 3px solid var(--accent);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.offer-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(209, 141, 15, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.offer-banner:hover {
+    transform: scale(1.02);
+    border-color: var(--primary);
 }
 
 .offer-content h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 1.5rem;
     color: var(--primary-dark);
+    font-weight: 900;
+}
+
+.offer-content p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    max-width: 600px;
+    margin: 0 auto 2rem;
 }
 
 .offer-content p span {
-    background: var(--accent);
+    background: var(--primary-dark);
     color: var(--white);
-    padding: 0.2rem 0.6rem;
-    border-radius: 5px;
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
     font-weight: 700;
+    display: inline-block;
+    margin: 0.5rem 0;
+    box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 768px) {
+    .offers {
+        padding: 3rem 1rem;
+    }
+    .offer-banner {
+        padding: 3rem 1.5rem;
+        border-radius: 30px;
+    }
 }
 
 /* Testimonials */
