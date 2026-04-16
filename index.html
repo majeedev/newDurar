@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="شي إن دُرَر - خدمتك الموثوقة للطلب من شي إن، أمازون، علي إكسبريس والتوصيل إلى باب بيتك في اليمن. تجربة تسوق آمنة وسريعة.">
+  <meta name="keywords" content="شي إن دُرَر, تسوق من الصين, طلب من أمازون اليمن, توصيل شي إن اليمن, وسيط شي إن">
+  <link rel="icon" href="photo/logo.jpg" />
+  <title>شي إن دُرَر | تسوقك العالمي بلمسة محلية</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="modern.css">
+
+  <!-- Icons (Lucide Icons via CDN) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="loading">
+
+  <!-- ---------- Preloader --------- -->
+  <div id="preloader">
+    <div class="loader-content">
+      <img src="photo/logo.jpg" alt="Loading...">
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <!-- ---------- Announcement Bar --------- -->
+  <div class="top-bar">
+    <div class="container bar-content">
+      <p>🚚 خدمة التوصيل متوفرة لجميع المحافظات اليمنية</p>
+      <div class="bar-links">
+        <span><i data-lucide="clock" style="width: 14px; height: 14px;"></i> توصيل خلال 10-15 يوم</span>
+        <span class="divider">|</span>
+        <a href="https://wa.me/967781555105">اطلب عبر واتساب مباشرة</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------- Header --------- -->
+  <header id="header">
+    <div class="container navbar">
+      <div class="logo">
+        <a href="#"><img src="photo/logo.jpg" alt="شي إن دُرَر"></a>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#home">الرئيسية</a>
+        <a href="#how-it-works">كيف نطلب</a>
+        <a href="#features">مميزاتنا</a>
+        <a href="#order">اطلب الآن</a>
+        <a href="#testimonials">آراء العملاء</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+      </nav>
+
+      <div class="cta-group">
+        <a href="https://wa.me/967781555105" class="btn-primary">
+          <i data-lucide="message-circle"></i>
+          <span>تواصل معنا</span>
+        </a>
+        <div class="mobile-menu-btn" id="mobile-toggle">
+          <i data-lucide="menu"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ---------- Hero Section ---------- -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="badge">نحن نوصل لك من حول العالم ✈️</span>
+          <h1>تسوق من أشهر الماركات العالمية بسهولة</h1>
+          <p>مع شي إن دُرَر، نوفر لك خدمة طلب منتجاتك المفضلة من شي إن، أمازون، علي إكسبريس وغيرها، ونوصلها لك في جميع
+            محافظات اليمن بأمان وسرعة.</p>
+
+          <div class="store-selector">
+            <select id="hero-store-select">
+              <option value="">-- اختر المتجر وابدأ التسوق --</option>
+              <option value="https://www.shein.com">SHEIN - شي إن</option>
+              <option value="https://www.amazon.com">AMAZON - أمازون</option>
+              <option value="https://www.aliexpress.com">AliExpress - علي إكسبريس</option>
+              <option value="https://www.noon.com">NOON - نون</option>
+              <option value="https://www.iherb.com">iHerb - آي هيرب</option>
+            </select>
+            <button class="btn-go" id="hero-go-btn">انطلق</button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong>+5000</strong>
+              <span>طلب مكتمل</span>
+            </div>
+            <div class="stat-item">
+              <strong>100%</strong>
+              <span>ضمان الجودة</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="photo/hero-bg.png" alt="تجربة تسوق فاخرة" class="hero-main-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Features / Why Us ---------- -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>لماذا تختار شي إن دُرَر؟</h2>
+          <p>نحن لا نقدم خدمة توصيل فقط، بل نقدم تجربة تسوق متكاملة</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="zap"></i></div>
+            <h3>توصيل سريع</h3>
+            <p>نحرص على وصول طلباتك في وقت قياسي بفضل شبكتنا اللوجستية المتطورة في اليمن.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+            <h3>أمان تام</h3>
+            <p>نضمن لك سلامة المنتجات ووصولها بنفس الحالة التي طلبتها بها من المتجر العالمي.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="headphones"></i></div>
+            <h3>دعم فني 24/7</h3>
+            <p>فريقنا متواجد دائماً للرد على استفساراتك ومتابعة حالة طلبك خطوة بخطوة.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="credit-card"></i></div>
+            <h3>طرق دفع سهلة</h3>
+            <p>وفرنا لك خيارات متعددة للدفع تناسب احتياجاتك وتسهل عليك عملية الشراء.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- How It Works ---------- -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-title">
+          <h2>كيف تطلب بـ 3 خطوات سهلة؟</h2>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-item">
+            <div class="step-number">01</div>
+            <h3>اختر منتجك</h3>
+            <p>تصفح المتاجر العالمية وانسخ رابط المنتج الذي تريده.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">02</div>
+            <h3>أرسل الطلب</h3>
+            <p>املأ نموذج الطلب أدناه أو تواصل معنا عبر الواتساب لتأكيد السعر.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">03</div>
+            <h3>استلم طلبك</h3>
+            <p>سنتولى نحن بقية الإجراءات من دفع وشحن وتوصيل حتى باب بيتك.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Offers Section ---------- -->
+    <section class="offers">
+      <div class="container">
+        <div class="offer-banner glass">
+          <div class="offer-content">
+            <h3>عرض خاص للعملاء الجدد! 🎁</h3>
+            <p>احصل على خصم 10% على رسوم أول طلب لك مع كود: <span>DURAR24</span></p>
+            <a href="#order" class="btn-primary">استفد من العرض الآن</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Order Request System ---------- -->
+    <section class="order-system" id="order">
+      <div class="container">
+        <div class="order-container">
+          <div class="order-info">
+            <h3>ابدأ طلبك الآن</h3>
+            <p>املأ البيانات التالية وسيقوم فريقنا بالتواصل معك في أقرب وقت لتأكيد طلبك وتحديد التكلفة النهائية.</p>
+
+            <ul class="trust-list">
+              <li><i data-lucide="check-circle"></i> تسعيرة دقيقة بدون رسوم مخفية</li>
+              <li><i data-lucide="check-circle"></i> تغليف آمن ومحترف لكل الشحنات</li>
+              <li><i data-lucide="check-circle"></i> دعم لجميع المتاجر العالمية</li>
+            </ul>
+          </div>
+
+          <div class="order-form">
+            <form id="request-form">
+              <div class="form-group">
+                <label for="product-link">رابط المنتج</label>
+                <input type="url" id="product-link" placeholder="انسخ الرابط هنا..." required>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="product-details">تفاصيل المنتج (اللون، المقاس)</label>
+                  <input type="text" id="product-details" placeholder="مثلاً: أسود، XL">
+                </div>
+                <div class="form-group">
+                  <label for="quantity">الكمية</label>
+                  <input type="number" id="quantity" value="1" min="1">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="customer-name">الاسم الثلاثي</label>
+                <input type="text" id="customer-name" placeholder="ادخل اسمك هنا" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">رقم الهاتف (واتساب)</label>
+                <input type="tel" id="phone" placeholder="77xxxxxxx" required>
+              </div>
+
+              <div class="form-group">
+                <label for="address">العنوان (المحافظة - المديرية)</label>
+                <input type="text" id="address" placeholder="مثلاً: صنعاء - حي الأصبحي" required>
+              </div>
+
+              <button type="submit" class="btn-submit" id="submit-btn">إرسال الطلب عبر واتساب</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Stores Section ---------- -->
+    <section class="stores">
+      <div class="container">
+        <div class="section-title">
+          <h2>المتاجر المدعومة</h2>
+        </div>
+        <div class="stores-scroll">
+          <div class="store-item"><img src="photo/shein.jpg" alt="Shein"></div>
+          <div class="store-item"><img src="photo/amazon.jpg" alt="Amazon"></div>
+          <div class="store-item"><img src="photo/noon.jpg" alt="Noon"></div>
+          <div class="store-item"><img src="photo/iherb.jpg" alt="iHerb"></div>
+          <div class="store-item"><img src="photo/chicpoint.jpg" alt="Chicpoint"></div>
+          <div class="store-item"><img src="photo/ALIEXPRESS (2).jpg" alt="AliExpress"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Testimonials ---------- -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>ماذا يقول عملاؤنا؟</h2>
+        </div>
+
+        <div class="testimonial-slider" id="testimonial-slider">
+          <div class="testimonial-card active">
+            <div class="quote-icon">“</div>
+            <p>خدمة عملاء محترمة ومتجاوبة، والتعبئة كانت مرتبة وأنيقة. سأطلب مرة ثانية بالتأكيد.</p>
+            <div class="user-info">
+              <img src="photo/avator.jpg" alt="محمد عصام">
+              <div>
+                <h4>محمد عصام</h4>
+                <span>عميل دائم</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <p>خدمة ممتازة جدًا! تم استلام طلبي من الخارج بسرعة، والتغليف كان مرتب وآمن، والموصل جداً محترم.</p>
+            <div class="user-info">
+              <img src="photo/avator.jpg" alt="ام خالد">
+              <div>
+                <h4>ام خالد</h4>
+                <span>عميل دائم</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- FAQ Section ---------- -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-title">
+          <h2>الأسئلة الشائعة</h2>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span>كيف أطلب من شي إن عبر دُرَر؟</span>
+              <i data-lucide="chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <p>ببساطة قم بنسخ رابط المنتج من تطبيق شي إن، وضعه في نموذج الطلب هنا على الموقع، أو أرسله لنا مباشرة عبر
+                الواتساب مع تحديد المقاس واللون.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span>كم تستغرق مدة التوصيل لليمن؟</span>
+              <i data-lucide="chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <p>تتراوح مدة التوصيل عادة بين 10 إلى 15 يوماً عمل من تاريخ تأكيد الطلب من المتجر العالمي.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span>ما هي طرق الدفع المتاحة؟</span>
+              <i data-lucide="chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <p>نوفر طرق دفع متعددة تشمل الكريمي، النجم، الحزمي، أو الدفع نقداً لمندوبنا في بعض المناطق.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ---------- Footer --------- -->
+  <footer id="contact">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo-container">
+          <img src="photo/logo.jpg" alt="Logo" class="footer-logo-img">
+        </div>
+        <p>شي إن دُرَر - بوابتك للتسوق العالمي في اليمن. نجمع بين السهولة، السرعة والأمان.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/shein.durar?igsh=MWg1ajlqYXlxZ3J5ZQ%3D%3D&utm_source=qr"
+            class="social-btn"><i data-lucide="instagram"></i></a>
+          <a href="http://wa.me/967781555105" class="social-btn"><i data-lucide="message-square"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#how-it-works">كيف نطلب</a></li>
+          <li><a href="#order">اطلب الآن</a></li>
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>المتاجر</h4>
+        <ul>
+          <li><a href="#">شي إن</a></li>
+          <li><a href="#">أمازون</a></li>
+          <li><a href="#">علي إكسبريس</a></li>
+          <li><a href="#">آي هيرب</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><i data-lucide="phone"></i> 776855564</li>
+          <li><i data-lucide="mail"></i> SheinDurar@gmail.com</li>
+          <li><i data-lucide="map-pin"></i> اليمن، كافة المحافظات</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; 2024 لـ شي إن دُرَر</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/967781555105" class="floating-wa" target="_blank">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="script-modern.js"></script>
+  <script>
+    // Init Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
