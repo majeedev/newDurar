@@ -865,6 +865,17 @@ footer {
     transform: translateY(-3px);
 }
 
+.social-btn svg {
+    width: 20px !important;
+    height: 20px !important;
+    transition: transform 0.3s ease;
+}
+
+.social-btn:hover svg {
+    transform: scale(1.1);
+    /* تأثير بسيط عند المرور بالماوس */
+}
+
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 2rem;
